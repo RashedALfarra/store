@@ -1,8 +1,8 @@
 @extends('layouts.dashboard')
 @section('content')
     <div class="py-3 px-2">
-        <form action="{{ url('categories/create') }}" method="GET">
-            <input class="btn btn-primary" type="submit" value="New">
+        <form action="{{url('categories/create')}}" method="GET">
+            <input class="btn btn-info" type="submit" value="New">
         </form>
     </div>
 
@@ -21,7 +21,7 @@
                     <td>{{ $category->name }}</td>
                     <td>
                         <form action="{{ url('/categories/edit/'. $category->id) }}" method="GET">
-                            <input class="btn btn-primary" type="submit" name="edit" value="Edit">
+                            <input class="btn btn-info" type="submit" name="edit" value="Edit">
 
                         </form>
 

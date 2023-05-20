@@ -8,12 +8,7 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    // public function indexHomePage()
-    // {
-    //     $products = Product::all();
-    //     $products = Product::paginate(15);
-    //     return view('home.shop', compact('products'));
-    // }
+
 
     public function index()
     {
@@ -63,5 +58,11 @@ class ProductController extends Controller
         $product->image = $request->image;
         $product->save();
         return redirect('products');
+    }
+    public function welcome()
+    {
+        $products = Product::all();
+        $products = Product::paginate(15);
+        return view('welcome', compact('products'));
     }
 }

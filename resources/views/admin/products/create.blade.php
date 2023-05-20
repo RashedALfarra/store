@@ -8,6 +8,10 @@
                 <input type="text" class="form-control" id="name" name="name">
             </div>
             <div class="mb-3">
+                <label class="form-label">details</label>
+                <textarea class="form-control" id="details" name="details" rows="5"></textarea>
+            </div>
+            <div class="mb-3">
                 <label class="form-label">Category</label>
                 <select class="form-select" id="category" name="category_id">
                     <option value='#'>Select Category</option>
@@ -25,11 +29,7 @@
                 <input type="text" class="form-control" id="image" name="image">
             </div>
             <div class="mb-3">
-                <label class="form-label">details</label>
-                <textarea class="form-control" id="details" name="details" rows="5"></textarea>
-            </div>
-            <div class="mb-3">
-                <input class="btn btn-info" type="submit" name="ؤreate" value="Create">
+                <input class="btn btn-info" type="submit" name="create" value="Create">
             </div>
         </form>
     </div>

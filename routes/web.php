@@ -18,9 +18,7 @@ use App\Http\Controllers\ProductController;
 
 Auth::routes();
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [ProductController::class, 'welcome']);
 
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', [CategoryController::class, 'index']);

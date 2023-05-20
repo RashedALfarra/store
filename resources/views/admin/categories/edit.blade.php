@@ -8,7 +8,7 @@
     <label>Enter the new name of category</label>
     <input class="form-control" type="text" name="name" value="{{ $category->name }}">
 
-   <div class="py-2"> <input class="btn btn-primary" type="submit" name="update" value="Update"></div>
+   <div class="py-2"> <input class="btn btn-info" type="submit" name="update" value="Update"></div>
 </form>
 
 @endsection
